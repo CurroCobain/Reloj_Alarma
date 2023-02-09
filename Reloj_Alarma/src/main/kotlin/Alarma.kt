@@ -30,10 +30,10 @@ class Alarma: Reloj() {
     }
     override fun ticTac(){
             super.ticTac()
-            super.display()
             if (this.segundos==0){
                 if(this.minutos==minutoAlarma) {
                     if (this.hora == horaAlarma) {
+                        super.display()
                         println("ALARMA SONANDO!!!!!!")
                     }
                 }
